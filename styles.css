@@ -137,4 +137,17 @@ img{
     border-radius: 25px;
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
+body {
 
+    transition: background-color 0.5s;
+  
+  }
+  
+  
+  .dark-mode {
+  
+    background-color: #262223;
+  
+    color: #e4e4e4;
+  
+  }

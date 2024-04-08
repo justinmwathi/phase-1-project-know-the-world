@@ -6,8 +6,6 @@ fetch(baseURL)
 .then(response=>response.json())
 .then(data=>{
     data.forEach(country=>{
-        console.log(country.flag)
-        console.log(country.name.common)
         
         const countries=document.getElementById("countries-list")
         const lists=document.createElement("li")
@@ -21,11 +19,22 @@ fetch(baseURL)
         const detailsLists=document.createElement("li");
         detailsLists.innerHTML=`
         <h6>Population: ${country.population} people </h6>
-        <h6>Capital City: ${country.capital[0]} </h6>
+        <h6>Capital City: ${country.capital} </h6>
         <h6>Region: ${country.region}<h6>
         <h6>Time Zone: ${country.timezones[0]}</h6>
         `
         lists.append(detailsLists)
+  
     })
+
+ const toggleBtn = document.querySelector(".toggle");
+toggleBtn.addEventListener("click",()=>{
+    document.body.classList.toggle("dark-mode");
+
+})
+
+
+ 
+
 })
 })
