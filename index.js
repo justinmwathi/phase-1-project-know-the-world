@@ -11,6 +11,7 @@ fetch(baseURL)
         
         const countries=document.getElementById("countries-list")
         const lists=document.createElement("li")
+        lists.classList.add("list-style")
         lists.innerHTML=`<h2>${country.name.common}</h2>`
         countries.appendChild(lists)
         const image=document.createElement("img")
@@ -20,8 +21,9 @@ fetch(baseURL)
         const detailsLists=document.createElement("li");
         detailsLists.innerHTML=`
         <h6>Population: ${country.population} people </h6>
-        <h6>Capital City: ${country.capital[0]}</h6>
+        <h6>Capital City: ${country.capital[0]} </h6>
         <h6>Region: ${country.region}<h6>
+        <h6>Time Zone: ${country.timezones[0]}</h6>
         `
         lists.append(detailsLists)
     })

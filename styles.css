@@ -123,16 +123,18 @@ font-family: Nunito;
 
 #countries-list{
 list-style: none;
+
 }
 img{
     width: 300px;
     display: block;
-    border: 5px solid;
+    border:2px solid #1A0E12
 } 
-#details-style{
-    
-    align-items: center;
-    margin-left:auto;
-    text-align: center;
+.list-style{
+    padding: 10px;
+    margin: 50px;
+    border: #1A0E12 solid;
+    border-radius: 25px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
