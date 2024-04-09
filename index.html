@@ -19,7 +19,7 @@
   </button>  
  </div> 
  <div class="input">
-    <form>
+    <form id="form">
      <input id="search" placeholder="Enter country's name" type="text" name="search">
      <input id="submit"  type="submit" value="Search Country">
     </form>
@@ -36,9 +36,19 @@
 <div class="country-details">
 </div>
 
-<footer id="comments-section">
-<h2>Comments</h2>    
-<ul id="comments"></ul>    
+
+<h2>Comments</h2>
+<ul class="comments-list"></ul>    
+<form id="comment-form" class="comment-form">
+    <input
+      class="comment-input"
+      type="text"
+      name="comment"
+      id="comment"
+      placeholder="Add a comment..."
+    />
+    <button class="comment-button" type="submit">Post</button>
+  </form>
 </div>
  <script src="index.js"></script>  
 

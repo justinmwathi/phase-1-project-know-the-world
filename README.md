@@ -7,7 +7,7 @@
 
 ## Features
 - **SEARCH FUNCTIONALITY:** The website has a search functionality which allows users to search for countries by passing a kkeyword to the input form
-- **DARK MODE/LIGHT MODE:** The website allows the user to toggle between light mode and dark mode to improve user comfortability by reducing eyestrain especially for users who use the website for long hours.
+- **DARK MODE/LIGHT MODE:** The website allows the user to c to improve user comfortability by reducing eyestrain especially for users who use the website for long hours.
 - **FILTER FUNCTIONALITY:** The website has a filter functionality that allows the user to  filter the countries according to continents and get the countries found in the provided continent
 - **COMMENTS AND REVIEWS SECTION:** The website allows users to leave comments about the website and provide feedback that allows for future improvements.
 
