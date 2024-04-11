@@ -116,8 +116,9 @@
   #countries-container{
       margin-top: 50px;
       display:flex;
-      flex-direction: column;
+      flex-direction:column;
       align-items: center;
+      
       
   } 
   
@@ -148,7 +149,7 @@
     
       background-color: #262223;
     
-      color: #e4e4e4;
+      color: #664E88;
     
     }
 li{
@@ -158,6 +159,7 @@ li{
   bottom: 30px;
   padding: 20px;
 }  
-.comment-style{
-  font-family:"poppins";
+#region-filter{
+ display: flex;
+ position: relative;
 }

@@ -53,7 +53,6 @@ const commentsForm=document.getElementById("comment-form")
             commentsForm.addEventListener("submit",(e)=>{
                 e.preventDefault()
                 const comment=document.createElement("li")
-                comment.classList.add("comment-style")
                 if(commentInput.value.length===0){
                     alert("Please add a comment")
                 }else{
