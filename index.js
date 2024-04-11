@@ -1,10 +1,12 @@
 
+
 //Making a GET request
 document.addEventListener("DOMContentLoaded",()=>{
 
 //A feature that allows a user to toggle between light mode and dark mode.
 const toggleBtn = document.querySelector(".toggle");
 toggleBtn.addEventListener("click",()=>{
+//On clicking the toggle button the class(dark mode)     
     document.body.classList.toggle("dark-mode");
 
 })
@@ -30,7 +32,7 @@ fetch(`https://restcountries.com/v3.1/name/${input.value}?fullText=true`)
                 image.src=result.flags.png
                 image.textContent=image.src
                 results.append(image)
-        //Country's details i.e. population,Capital city,region and Time zones       
+        //Country's details i.e. population,Capital city,region,Time zones and if the counry is a member of the UN       
                 const detailsLists=document.createElement("li");
                 detailsLists.innerHTML=`
                 <h6>Population: ${result.population} people </h6>
@@ -54,6 +56,7 @@ const commentsForm=document.getElementById("comment-form")
                 e.preventDefault()
                 const comment=document.createElement("li")
                 if(commentInput.value.length===0){
+                //Send an alert to the user if the input field is empty and no comment is added       
                     alert("Please add a comment")
                 }else{
                 comment.textContent=commentInput.value
@@ -61,6 +64,14 @@ const commentsForm=document.getElementById("comment-form")
                 commentsList.append(comment)
             }) 
 
+//Adding a filter function to filter countries
+
 })
+
+
+
+
+
+
 
 
