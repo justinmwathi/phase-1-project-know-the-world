@@ -62,7 +62,14 @@ const commentsForm=document.getElementById("comment-form")
                 comment.textContent=commentInput.value
                 }
                 commentsList.append(comment)
-            }) 
+
+                //Deleting a comment or a review
+commentsList.addEventListener("click",(e)=>{
+    e.target.remove()
+})
+
+ }) 
+
 
 
             
