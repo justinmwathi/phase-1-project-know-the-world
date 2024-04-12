@@ -64,8 +64,8 @@ const commentsForm=document.getElementById("comment-form")
                 commentsList.append(comment)
             }) 
 
-//Adding a filter function to filter countries
 
+            
 })
 
 
