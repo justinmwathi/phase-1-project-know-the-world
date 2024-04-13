@@ -1,176 +1,204 @@
-body{
-  background: #E7E9EA ;
+body {
+
+  background-color: #E7E9EA;
+
+  transition: background-color 0.5s;
+
 }
-#navigation-bar{
-  background-color:#96AED0;
-  display: flex;
-  width:100%
+
+
+body.dark-mode {
+
+  background-color: #262223;
+
+  color: #664E88;
+
 }
+
+
+.toggle {
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  margin-top: 1rem;
+
+  margin-right: 2rem;
+
+}
+
+
 .container {
+
   font-family: Nunito;
-      max-width: 800px;
-    
-      margin: 0 auto;
-    
-      text-align: center;
-    
-    }
-    
-    
-    .container h1 {
-    
-      font-size: 3rem;
-    
-      margin-bottom: 1rem;
-    
-    }
-    
-    
-    .container button {
-    
-      font-size: 1.2rem;
-    
-      padding: 0.5rem 1rem;
-    
-      margin-bottom: 1rem;
-    
-    }
-    
-    
-    .container p {
-    
-      font-size: 1.2rem;
-    
-      line-height: 1.5;
-    
-      text-align: left;
-    
-      margin-left: 2rem;
-    
-      margin-right: 2rem;
-    
-    }
-   .toggle{
-      position: absolute;
-  
-    top: 0;
-  
-    right: 0;
-  
-    margin-top: 1rem;
-  
-    margin-right: 2rem;
-   } 
-   .input {
-  
-      display: flex;
-    
-      justify-content: center;
-    
-      margin-top: 2rem;
-    
-    }
-    
-    
-    .input form {
-    
-      display: flex;
-    
-      justify-content: space-between;
-    
-      align-items: center;
-    
-      width: 50%;
-    
-      border: 1px solid #ccc;
-    
-      padding: 0.5rem;
-    
-      border-radius: 4px;
-    
-    }
-    
-    
-    .input input[type="text"] {
-    
-      flex-grow: 1;
-    
-      padding: 0.5rem;
-    
-      border: none;
-    
-      border-radius: 4px;
-    
-      outline: none;
-    
-    }
-    
-    
-    .input input[type="submit"] {
-    
-      padding: 0.5rem 1rem;
-    
-      background-color: #0080FF ;
-    
-      color: white;
-    
-      border: none;
-    
-      border-radius: 4px;
-    
-      cursor: pointer;
-    
-    }
-  #countries-container{
-      margin-top: 50px;
-      display:flex;
-      flex-direction:column;
-      align-items: center;
-      
-      
-  } 
-  
-  #countries-list{
-  list-style: none;
-  
-  }
-  img{
-      width: 300px;
-      display: block;
-      border:2px solid #1A0E12
-  } 
-  .list-style{
-      padding: 10px;
-      margin: 50px;
-      border: #1A0E12 solid;
-      border-radius: 25px;
-      box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
-  }
-  body {
-  
-      transition: background-color 0.5s;
-    
-    }
-    
-    
-    .dark-mode {
-    
-      background-color: #262223;
-    
-      color: #664E88;
-    
-    }
-li{
-  list-style: none;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+
 }
-.comment-form{
+
+
+.container h1 {
+
+  font-size: 3rem;
+
+  margin-bottom: 1rem;
+
+}
+
+
+.container button {
+
+  font-size: 1.2rem;
+
+  padding: 0.5rem 1rem;
+
+  margin-bottom: 1rem;
+
+}
+
+
+.container p {
+
+  font-size: 1.2rem;
+
+  line-height: 1.5;
+
+  text-align: left;
+
+  margin-left: 2rem;
+
+  margin-right: 2rem;
+
+}
+
+
+.input {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 2rem;
+
+}
+
+
+.input form {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 50%;
+
+  border: 1px solid #ccc;
+
+  padding: 0.5rem;
+
+  border-radius: 4px;
+
+}
+
+
+.input input[type="text"] {
+
+  flex-grow: 1;
+
+  padding: 0.5rem;
+
+  border: none;
+
+  border-radius: 4px;
+
+  outline: none;
+
+}
+
+
+.input input[type="submit"] {
+
+  padding: 0.5rem 1rem;
+
+  background-color: #0080FF;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+
+#countries-container {
+
+  margin-top: 50px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+#countries-list {
+
+  list-style: none;
+
+}
+
+
+img {
+
+  width: 300px;
+
+  display: block;
+
+  border: 2px solid #1A0E12;
+
+}
+
+
+.list-style {
+
+  padding: 10px;
+
+  margin: 50px;
+
+  border: #1A0E12 solid;
+
+  border-radius: 25px;
+
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
+}
+
+
+.comment-form {
+
   margin-bottom: 40px;
+
   padding: 20px;
 
-}  
+}
 
-#footer{
-  position:fixed;
+
+#footer {
+
+  position: fixed;
 
   bottom: 0;
 
@@ -187,9 +215,12 @@ li{
   text-align: center;
 
   font-size: 0.8em;
+
 }
 
-.comment-button{
+
+.comment-button {
+
   padding: 5px 10px;
 
   background-color: #4CAF50;
@@ -201,8 +232,13 @@ li{
   border-radius: 5px;
 
   cursor: pointer;
+
 }
-.toggle{
+li{
+  list-style: none;
+}
+
+.toggle {
 
   padding: 10px 20px;
 
@@ -215,5 +251,38 @@ li{
   border-radius: 5px;
 
   cursor: pointer;
+
+}
+
+
+.delete-button {
+
+  padding: 5px 10px;
+
+  background-color: #ED1C24;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+
+.dark-mode .comment-button {
+
+  background-color: #664E88;
+
+}
+
+
+.dark-mode .delete-button {
+
+  background-color: #ED1C24;
+
+  color: #262223;
 
 }

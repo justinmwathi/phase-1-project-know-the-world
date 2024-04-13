@@ -8,7 +8,7 @@
 ## Features
 - **SEARCH FUNCTIONALITY:** The website has a search functionality which allows users to search for countries by passing a kkeyword to the input form
 - **DARK MODE/LIGHT MODE:** The website allows the user to c to improve user comfortability by reducing eyestrain especially for users who use the website for long hours.
-- **FILTER FUNCTIONALITY:** The website has a filter functionality that allows the user to  filter the countries according to continents and get the countries found in the provided continent
+- **DELETE FUNCTIONALITY:**The user is able to delete the comments they add in the commnets sections and also a delete request is made to the db.json file. 
 - **COMMENTS AND REVIEWS SECTION:** The website allows users to leave comments about the website and provide feedback that allows for future improvements.
 
 ## The GitHub Pages Link

@@ -2,7 +2,7 @@
 
 //Making a GET request
 document.addEventListener("DOMContentLoaded",()=>{
-const heading=document.getElementById("heading")
+
 
     //A feature that allows a user to toggle between light mode and dark mode.
     const toggleBtn = document.querySelector(".toggle");
@@ -60,12 +60,11 @@ const heading=document.getElementById("heading")
     const commentsForm=document.getElementById("comment-form")
     const commentInput=document.getElementById("comment")
     const commentsList=document.querySelector(".comments-list")
-    const  commentsBtn=document.querySelector(".comment-button")
     commentsForm.addEventListener("submit",(e)=>{
         e.preventDefault()
     })
-    commentsBtn.addEventListener("click",(e)=>{
-        //e.preventDefault()
+    commentsForm.addEventListener("submit",(e)=>{
+        e.preventDefault()
         const comment=document.createElement("li")
         comment.textContent=commentInput.value
         
@@ -84,11 +83,29 @@ const heading=document.getElementById("heading")
                 .then(response => response.json())
                 .then(data =>{
                     comment.textContent=data.comment
+                    comment.id=data.id
                     commentsList.append(comment)
+
+                    const deleteBtn=document.querySelector(".delete-button")
+deleteBtn.addEventListener('click',()=>{
+   
+    fetch(`http://localhost:3000/comments/${data.id}`, {
+
+        method: "DELETE",
+        
+      })
+
+      .then(() => {
+
+        comment.remove();
+
+      });
                 })
            
         })
 //Deleting a comment
+
+})
 
 
 })
